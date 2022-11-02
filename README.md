@@ -10,4 +10,4 @@ To use this all a user has to do is click on the link and it will automatically 
 Here is the link!
 https://janvierb1.github.io/Personal-Portfolio
 
-![alt text](assets/images/Web%20capture_26-9-2022_225346_127.0.0.1.jpeg)
+![alt text](./assets/images/Web%20capture_1-11-2022_204640_.jpeg)
