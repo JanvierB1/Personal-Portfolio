@@ -2,112 +2,261 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="assets\style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Janvier Barreto</title>
   </head>
-  <body>
-    <header>
-      <h1 class="name">Janvier Barreto Acevedo</h1>
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#mywork">My Work</a></li>
-          <li><a href="#footid">Contact Me</a></li>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="" class="link"
+          >JB.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
         </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
       </nav>
-      <a class="cta" href="#"><button>Resume</button></a>
     </header>
 
-    <aside>
-        <img src="assets\images\OIP.jfif">
-    </aside>
-
     <main>
-      <section class="container">
-        <div class="row" id="about-me">
-          <div class="sidebar">
-            <h2>About Me</h2>
-          </div>
-          <div class="content">
-            <p>
-              Hello my name is Janvier I am currently undergoing a bootcamp to
-              help develop my skills as a software engineer. The passion I have
-              for doing what I love lets me be engage and happy to learn more
-              and more everyday, and to work hard to one day become a great
-              developer. I value the concept of learning as its what is going to
-              make me go far, and will lend me the skills to one day fulfill the
-              needs of a company or customer.
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Janvier Barreto</span></h1>
+        <h2 class="about__role">A Full Stack develop.</h2>
+        <p class="about__desc">
+          I am a full-stack developer with a passion for creating innovative and user-friendly web applications. With a strong background in both front-end and back-end development, I am able to bring ideas to life from start to finish. My experience includes working with languages such as JavaScript, HTML, and CSS, as well as frameworks such as jQuery, and Node.js. I am also familiar with databases, such as MySQL and MongoDB. I am always eager to learn new technologies and stay up-to-date with industry trends to ensure the best possible results in any project I work in.
+        </p>
+
+        <div class="about__contact center">
+          <!-- <a href="">
+            <span class="btn btn--outline">Resume</span>
+          </a> -->
+
+          <a
+            href="https://github.com/JanvierB1"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <!-- <a
+            href=""
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a> -->
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Simple-Quiz</h3>
+            <p class="project__description">
+              This is one of my first projects using JavaScript and decided to make a short quiz to showcase my brand new skills
             </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">Html</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/JanvierB1/Simple-Quiz-App.git"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://janvierb1.github.io/Simple-Quiz-App/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Team Role Organizer</h3>
+            <p class="project__description">
+              This project allows the user to create a neat and clean team roster base on the users input. The user will pick among some options and will generated for the user. This project is not published but feel free to go to my GitHub, fork it and try it out!
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">Html</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/JanvierB1/Team-Role-Organizer.git"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>The Movie Library</h3>
+            <p class="project__description">
+              This project is a Movie Library that can be used to track movies you've seen as well as look up new movies and get their age rating. This project was one fo the first ones I collaborated with other people and it was a fun experience to see our ideas come to life.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">Html</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/JanvierB1/The-Movie-Library.git"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://janvierb1.github.io/The-Movie-Library/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Note-Taker</h3>
+            <p class="project__description">
+              This project was a challenging one using express for the first time. This app helps those who are busy enough to where they forget things and have to take notes to remember things. It is intented for anyone really who like to write their things down.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">Html</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/JanvierB1/Note-Taker.git"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://nameless-river-68440.herokuapp.com/notes"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Email Regex Tutorial</h3>
+            <p class="project__description">
+             One of my first times learning about regex was making this tutorial on how it works. This project is about Matching an Email and it breaks down the expressions into each component to explain how it works.
+            </p>
+            <a
+              href="https://github.com/JanvierB1/Regex-Tutorial.git"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="container">
-        <div class="row" id="mywork">
-          <div class="sidebar">
-            <h2>My Work</h2>
-          </div>
-          <div class="content">
-            <nav class="image">
-              <a
-                href="https://janvierb1.github.io/PreWork_Study-Guide/"
-                target="_blank"
-              >
-                <img
-                  src="assets\images\Web capture_25-9-2022_9358_janvierb1.github.io.jpeg"
-                  
-                />
-              </a>
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">SCSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Express</li>
+          <li class="skills__list-item btn btn--plain">MVC</li> 
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">MongoDB</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">NodeJs</li>
+        </ul>
+      </section>
 
-              <a
-                href="https://janvierb1.github.io/HoriSeon-Online-Marketing/"
-                target="_blank"
-              >
-                <img
-                  src="assets\images\Web capture_19-9-2022_112539_.jpeg"
-                 
-                />
-              </a>
-
-              <a
-                href="https://janvierb1.github.io/HoriSeon-Online-Marketing/"
-                target="_blank"
-              >
-                <img
-                  src="assets\images\CSS-Logo.png"
-                  
-                />
-              </a>
-
-              <a
-                href="https://janvierb1.github.io/The-Movie-Library/"
-                target="_blank"
-              >
-                <img
-                  src="./assets/images/Web capture_1-11-2022_201923_janvierb1.github.io.jpeg"                
-                />
-              </a>
-                
-            </nav>
-          </div>
-        </div>
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:janvieracevedo912@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
       </section>
     </main>
 
-
-    <footer>
-      <div>
-        <h2 id="footid">Contact Me</h2>
-        <nav class="content-footer">
-            <ul>
-            <li><a href="#">Phone: 254-535-6492</a></li>
-            <li><a href="#">Emial: janvieracevedo912@gmail.com</a></li>
-            <li><a href="#">GitHub</a></li>
-            </ul>
-        </nav>
-      </div>
+    <footer class="footer">
+      <a
+        href="https://github.com/JanvierB1"
+        class="link footer__link"
+      >
+        By JanvierB1
+      </a>
     </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="/script.js"></script>
   </body>
 </html>
