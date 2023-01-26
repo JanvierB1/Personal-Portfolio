@@ -10,4 +10,4 @@ To use this all a user has to do is click on the link and it will automatically 
 Here is the link!
 https://janvierb1.github.io/Personal-Portfolio
 
-![alt text](./assets/images/Web%20capture_1-11-2022_204640_.jpeg)
+![alt text](./assets/images/Janvier%20Barreto%20and%201%20more%20page%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%201_25_2023%209_42_29%20PM.png)
